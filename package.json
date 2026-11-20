@@ -1,0 +1,10 @@
+{
+  "name": "tripti-sethia-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check dist/interface.js && node --check dist/app.js && node --check dist/project.js && node --check dist/project-interactions.js"
+  }
+}
