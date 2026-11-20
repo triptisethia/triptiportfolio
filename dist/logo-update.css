@@ -1,0 +1,10 @@
+.sidebar .identity{width:150px;min-width:150px;max-width:150px;height:68px;min-height:68px;flex:0 0 auto;display:block}.orbit-logo{display:block;position:relative;width:150px;height:68px;overflow:hidden;mix-blend-mode:multiply}.orbit-logo img,.orbit-logo i{position:absolute;width:222px;height:111px;max-width:none;left:-37px;top:-21px;pointer-events:none}.orbit-logo i{background:url('assets/tripti-orbit-logo.png') center/100% 100%;opacity:0;filter:brightness(2.2)}.star-one{clip-path:polygon(58% 18%,72% 18%,72% 37%,58% 37%)}.star-two{clip-path:polygon(31% 63%,41% 63%,41% 78%,31% 78%)}.logo-blink .logo-star{animation:star-blink .65s steps(2,end) 2}.logo-blink .star-two{animation-delay:.1s}@keyframes star-blink{0%,100%{opacity:0}40%,65%{opacity:1}}@media(max-width:800px){.sidebar .identity{width:120px;min-width:120px;max-width:120px;height:54px;min-height:54px}.orbit-logo{transform:scale(.8);transform-origin:left top}}@media(prefers-reduced-motion:reduce){.logo-blink .logo-star{animation-duration:.15s;animation-iteration-count:1}}
+a:focus:not(:focus-visible),button:focus:not(:focus-visible){outline:none}
+.sidebar .identity{width:100px;min-width:100px;max-width:100px;height:45px;min-height:45px}.orbit-logo{transform:scale(.66);transform-origin:left top}@media(max-width:800px){.sidebar .identity{width:100px;min-width:100px;max-width:100px;height:45px;min-height:45px}.orbit-logo{transform:scale(.66)}}
+
+
+.orbit-logo{filter:grayscale(1) sepia(1) saturate(1.25)}
+#project-list .project-item[href*='work-specimen'] .project-image img,.stamp img[src*='66deed76e868e444']{object-fit:contain!important;object-position:center!important;transform:none!important}
+
+/* Keep the paper around the uploaded mark fully transparent. */
+.orbit-logo{filter:url("logo-cutout.svg#brown-cutout");mix-blend-mode:normal}

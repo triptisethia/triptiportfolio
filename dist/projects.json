@@ -1,0 +1,126 @@
+{
+  "projects": [
+    {
+      "id": "aqi",
+      "title": "365 Days, 365 AQI Levels",
+      "year": "2026",
+      "tags": [
+        "Research",
+        "Data Visualization",
+        "Graphic Design"
+      ],
+      "description": "An accessible AQI calendar helping elderly people understand pollution and make safer daily choices.",
+      "image": "assets/cd8b1d96d3109013.jpg",
+      "alt": "An elderly woman wearing a face mask amid heavy smog — 365 Days, 365 AQI Levels",
+      "backImage": "assets/e9e18e3fca8594de.jpg"
+    },
+    {
+      "id": "specimen",
+      "title": "Specimen001",
+      "year": "2026",
+      "tags": [
+        "Speculative Fiction",
+        "World Building"
+      ],
+      "description": "A speculative fiction about engineered cattle, ecological loss, and luxury preservation.",
+      "image": "assets/66deed76e868e444.jpg",
+      "alt": "Specimen001 — a bejeweled cow beside a preserved glass of milk",
+      "backImage": "assets/c2d08b7c44d40004.jpg"
+    },
+    {
+      "id": "buried",
+      "title": "Buried in the Crowd",
+      "year": "2026",
+      "tags": [
+        "Systems Thinking",
+        "Research",
+        "Giga Mapping"
+      ],
+      "description": "Mapping the interconnected forces behind crowd disasters in India, from systemic failures to possible points of change.",
+      "image": "assets/buried/cover.png",
+      "alt": "Buried in the Crowd — original systems-thinking project artwork"
+    },
+    {
+      "id": "taarghar",
+      "title": "Taarghar",
+      "year": "2026",
+      "tags": [
+        "Multisensory Design",
+        "Interaction Design"
+      ],
+      "description": "A group installation recreating a telegraph office — my part turns sign-language gestures into Morse code and a printed telegram.",
+      "image": "assets/5170f75dd50d7d85.jpg",
+      "alt": "Taarghar — The Telegraph Office, multisensory installation",
+      "hidden": true
+    },
+    {
+      "id": "antisocial",
+      "title": "Antisocial Glasses",
+      "year": "2026",
+      "tags": [
+        "Physical Computing",
+        "Critical Design",
+        "Speculative Design"
+      ],
+      "description": "A wearable experiment in personal space: sensing proximity and sound, without interpreting speech.",
+      "image": "assets/antisocial/mannequin-prototype.png",
+      "alt": "Antisocial Glasses prototype on a mannequin"
+    },
+    {
+      "id": "remnant",
+      "title": "Remnant",
+      "year": "2025",
+      "tags": [
+        "Film",
+        "Sound Design"
+      ],
+      "description": "A video poem exploring memory, time, and the fragments of everyday life that shape who we become.",
+      "image": "assets/0ae9f8962cbdec08.jpg",
+      "alt": "Remnant — video poem still, clock hands and hourglass"
+    },
+    {
+      "id": "thela",
+      "title": "Thela, Thaila, Thikana",
+      "year": "2025",
+      "tags": [
+        "UX Research",
+        "Graphic Design"
+      ],
+      "description": "A research-driven project on street vendors, space, and informal systems in Ahmedabad's municipal market.",
+      "image": "assets/e10b8c3cc4702216.jpg",
+      "alt": "Municipal Market signage, Ahmedabad",
+      "backImage": "assets/c57867a489e1d19d.jpg"
+    },
+    {
+      "id": "mautam",
+      "title": "Mautam — The Famine",
+      "year": "2025",
+      "tags": [
+        "3D World Building",
+        "Virtual Reality"
+      ],
+      "description": "VR simulation exploring the bamboo masting famine of 19th-century Mizoram, built in Unity and Blender.",
+      "image": "assets/c455559342bd5f88.jpg",
+      "alt": "Mautam — sunlit bamboo forest canopy from below",
+      "backImage": "assets/cab0cbbef0a57b27.jpg"
+    },
+    {
+      "id": "posture",
+      "title": "AlignR",
+      "year": "2024",
+      "tags": [
+        "Product Design",
+        "Prototyping",
+        "UX Research"
+      ],
+      "description": "A wearable posture corrector exploring gentle, real-time feedback for everyday posture.",
+      "image": "assets/alignr-cover.png",
+      "alt": "AlignR — front view, side view and upper-back placement",
+      "backImage": "assets/67ca1dd55e9d1943.jpg"
+    }
+  ],
+  "portrait": "assets/dee1e96e10d7754f.jpg",
+  "bio": [
+    "I’m Tripti, growing up in Delhi made me curious about people, public spaces, and the stories unfolding around me every day. Design became a way for me to explore those questions and better understand the world around me.\n        I’m especially interested in new media and immersive experiences. I work across interfaces, 3D environments, physical computing, and print, exploring how different mediums shape the way an experience is felt.\n        Outside of design, you’ll usually find me reading, watching films, or cooking. They keep me grounded and continually introduce me to new perspectives and ways of thinking. By day I’m a designer, and by night I am…\n        bookworm\n          home cook\n        View Resume ↗"
+  ]
+}

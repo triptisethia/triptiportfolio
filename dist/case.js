@@ -1,0 +1,28 @@
+(async function(){
+  const data=await fetch('projects.json').then(r=>r.json());
+  const params=new URLSearchParams(location.search),id=params.get('project');
+  const p=data.projects.find(p=>p.id===id);if(!p)return;
+  document.documentElement.setAttribute('data-theme','light');
+  const originalNavigate=window.navigate;
+  originalNavigate(p.id);
+  const send=(type,extra={})=>{if(parent!==window)parent.postMessage({type,...extra},location.origin);};
+  window.navigate=function(page){const hash=['home','about','contact'].includes(page)?'#'+page:page==='projects'?'#works':'#project/'+page;if(parent!==window)send('portfolio-navigate',{hash});else location.href='index.html'+hash;};
+  const page=document.getElementById('page-'+p.id),wrap=page.querySelector('.cs-page');
+  const cover=document.createElement('header');cover.className='portfolio-cover';
+  const top=document.createElement('div');top.className='portfolio-topline';
+  const home=document.createElement('button');home.textContent='✦ TRIPTI SETHIA';home.onclick=()=>navigate('home');
+  const back=document.createElement('button');back.textContent='ALL WORK ↗';back.onclick=()=>navigate('projects');top.append(home,back);
+  const head=document.createElement('div');head.className='portfolio-project-head';
+  const h=document.createElement('h1');h.textContent=p.title;
+  const info=document.createElement('div');info.className='portfolio-project-info';
+  const desc=document.createElement('p');desc.textContent=p.description;
+  const meta=document.createElement('span');meta.textContent=p.tags.join(' / ').toUpperCase()+' · '+p.year;info.append(desc,meta);head.append(h,info);
+  const image=document.createElement('img');image.src=p.image;image.alt=p.alt;image.className='portfolio-cover-image';
+  cover.append(top,head,image);const facts=wrap.querySelector('.dl-facts');if(facts){facts.classList.add('portfolio-facts');cover.append(facts);}wrap.prepend(cover);
+  const end=document.createElement('footer');end.className='portfolio-end';const note=document.createElement('span');note.textContent='CONTINUE EXPLORING';const next=data.projects[(data.projects.indexOf(p)+1)%data.projects.length];const nextButton=document.createElement('button');nextButton.textContent=next.title+' ↗';nextButton.onclick=()=>navigate(next.id);end.append(note,nextButton);wrap.append(end);
+  document.title=p.title+' — Tripti Sethia';
+  window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent)return;if(e.data?.type==='portfolio-top')window.scrollTo({top:0,behavior:'smooth'});});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const lightbox=document.querySelector('.lightbox.open,.lightbox.active,.lb-overlay.open');if(!lightbox)navigate('projects');}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();send('portfolio-command');}});
+  let queued=false;window.addEventListener('scroll',()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;send('portfolio-progress',{value:max>0?scrollY/max*100:0});queued=false;});},{passive:true});
+  document.querySelectorAll('video').forEach(v=>{if(!page.contains(v))v.pause();});
+})();
