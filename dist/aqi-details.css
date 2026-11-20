@@ -1,0 +1,31 @@
+
+.aqi-trend,.aqi-encoding,.aqi-seasons,.aqi-stakeholders{border-top:1px solid #d9d3c7;padding-top:28px;margin-top:40px!important}
+.section-content .aqi-small{font:12px/1.6 Inter,Arial,sans-serif!important;color:#716b60}
+.aqi-bars{height:240px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin:24px 0}
+.aqi-bars button{display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;background:none;border:0;padding:0;color:inherit}
+.aqi-bars button>span{height:var(--bar);background:#d9c7ac;display:flex;align-items:flex-start;justify-content:center;padding-top:12px;transition:background .2s}
+.aqi-bars button[aria-pressed=true]>span{background:#a35d32;color:white}
+.aqi-bars small{padding-top:12px;font-size:12px}.aqi-bars b{font-size:14px;font-weight:400}
+.aqi-trend-detail{min-height:48px;font-size:15px;line-height:1.6}
+.aqi-method{border-top:1px solid #d9d3c7;border-bottom:1px solid #d9d3c7;padding:18px 0;margin-top:28px}
+.aqi-method summary{cursor:pointer;font-size:15px}.aqi-method p{max-width:72ch;font-size:14px;line-height:1.75}
+.aqi-encoding-controls{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}
+.aqi-encoding-controls button{border:1px solid #ccc5b7;border-radius:24px;padding:10px 16px;background:transparent;color:inherit;font:13px Inter,Arial,sans-serif}
+.aqi-encoding-controls button[aria-pressed=true]{background:#73513b;border-color:#73513b;color:#fff}
+.aqi-encoding-demo{display:grid;grid-template-columns:180px minmax(0,1fr);gap:36px;align-items:center;max-width:740px}
+.aqi-example{height:210px;border:1px solid #cfc6b4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#eee8d8;transition:background .3s,color .3s}
+.example-date{font:54px Georgia,serif}.example-month,.example-pollutant,.example-body{font:11px monospace}
+.example-pollutant,.example-body{opacity:.18;transition:opacity .25s}
+.aqi-example[data-layer=value]{background:#e8873a}.aqi-example[data-layer=pollutant] .example-pollutant,.aqi-example[data-layer=body] .example-body{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.aqi-encoding-demo h4,.aqi-season-result h4{font-size:23px;margin:0 0 12px}
+.aqi-encoding-demo p,.aqi-season-result p{font-size:15px;line-height:1.7;margin:0 0 14px}
+.aqi-encoding-demo small{font-size:11px;color:#777165}
+.aqi-season-result{display:flex;align-items:center;gap:28px;max-width:740px;min-height:140px}
+.season-marker{width:64px;height:64px;border-radius:50%;background:#b23a2e;flex-shrink:0;transition:background .25s}
+[data-season-active=summer] .season-marker{background:#e8873a}[data-season-active=monsoon] .season-marker{background:#819879}
+.aqi-stakeholder-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.aqi-stakeholder-grid article{padding:20px;background:#eee9dd}
+.aqi-stakeholder-grid span{font:10px monospace}.aqi-stakeholder-grid h4{font-size:23px;margin:14px 0}.aqi-stakeholder-grid p{font-size:14px;line-height:1.7}
+@media(max-width:600px){.aqi-bars{gap:8px;height:200px}.aqi-encoding-demo{grid-template-columns:120px minmax(0,1fr);gap:20px}.aqi-example{height:180px}.aqi-stakeholder-grid{grid-template-columns:1fr}.aqi-season-result{gap:18px}.season-marker{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.aqi-example,.aqi-example span,.season-marker{transition:none}}
+
+.aqi-pollutants{margin-top:40px}.aqi-pollutants dl>div{display:grid;grid-template-columns:100px 1fr;gap:20px;border-top:1px solid #d9d3c7;padding:16px 0;font-size:14px;line-height:1.7}.aqi-pollutants dt{font-weight:600}.aqi-pollutants dd{margin:0}

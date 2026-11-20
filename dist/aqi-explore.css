@@ -1,0 +1,51 @@
+
+.aqi-body,.aqi-map-block,.aqi-season-explorer,.calendar-reasons{margin-top:48px!important;border-top:1px solid #d4cec1;padding-top:28px}
+.aqi-body>p,.aqi-map-block>p,.aqi-season-explorer>p,.calendar-reasons>p{max-width:72ch;font:15px/1.75 Inter,Arial,sans-serif}
+.body-layout{display:grid;grid-template-columns:minmax(230px,1fr) minmax(0,1fr);gap:40px;align-items:center;margin-top:28px}
+.body-figure{position:relative;max-width:360px;width:100%;margin:auto}.body-figure svg{display:block;width:100%}
+.organ-point{position:absolute;left:var(--x);top:var(--y);padding:0;border:0;background:none;color:#87463d;display:flex;align-items:center;gap:8px;transform:translate(-10px,-10px)}
+.organ-point i{display:block;width:20px;height:20px;border:5px solid #e6b8a9;border-radius:50%;background:#ae4d40;box-shadow:0 0 0 4px #ae4d4014}
+.organ-point span{background:#f7f5ed;padding:4px 8px;font:12px Inter,Arial,sans-serif;border:1px solid #d5c9bd}
+.organ-point[aria-pressed=true] i{box-shadow:0 0 0 7px #ae4d4033}.organ-point[aria-pressed=true] span{background:#87463d;color:#fff}
+.organ-point[data-organ=lungs]{flex-direction:row-reverse;transform:translate(calc(-100% + 10px),-10px)}
+.body-info{border-left:2px solid #ae4d40;padding-left:24px;min-height:210px}
+.body-info h4,.map-selection h4,.season-explanation h4{font:28px Georgia,serif;margin:14px 0}
+.body-info p,.map-selection p,.season-explanation p{font:15px/1.75 Inter,Arial,sans-serif}
+.body-info a,.source-note a{text-decoration:underline;text-underline-offset:3px}
+.body-info a{font-size:12px}
+.source-note{font:12px/1.65 Inter,Arial,sans-serif!important;color:#716b60;margin-top:20px}
+.reason-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:28px 0}
+.reason-grid article{border-top:1px solid #d4cec1;padding-top:20px}
+.reason-grid strong{font:44px Georgia,serif;color:#87463d}.reason-grid p{font:14px/1.7 Inter,Arial,sans-serif}
+.map-toolbar{display:flex;align-items:center;gap:10px;margin:24px 0 12px}
+.map-toolbar button,.season-choices button{border:1px solid #c7bfae;padding:10px 18px;background:transparent;color:inherit;border-radius:22px}
+.map-toolbar output{min-width:48px;font:12px monospace;text-align:center}
+.aqi-map-viewport{height:520px;border:1px solid #d8d1c3;overflow:hidden;position:relative;background:#f1eee4}
+.aqi-map-canvas{position:absolute;left:0;top:0;width:1000px;height:600px;transform-origin:0 0}
+.aqi-map-canvas svg{width:100%;height:100%;font:14px Inter,Arial,sans-serif;fill:#716b60}
+.aqi-map-viewport.zoomed{touch-action:none;cursor:grab}.aqi-map-viewport.zoomed:active{cursor:grabbing}
+.stakeholder-point{position:absolute;transform:translate(-50%,-50%);border:1px solid #b5ab99;border-radius:5px;background:#f7f5ed;padding:10px 14px;font:16px Inter,Arial,sans-serif;color:#51493d;white-space:nowrap}
+.stakeholder-point[aria-pressed=true]{background:#87463d;color:white;border-color:#87463d}
+.map-selection{border-left:2px solid #87463d;padding-left:22px;min-height:130px;margin-top:24px}
+.season-choices{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+.season-choices button{border-radius:6px;min-width:140px;text-align:left;font-size:16px}
+.season-choices small{display:block;font:11px monospace;margin-top:6px}
+.season-choices button[aria-pressed=true]{background:#514b40;color:#fff;border-color:#514b40}
+.season-scene{background:#ebe7dd;border:1px solid #d8d1c3}.season-scene svg{display:block;width:100%;max-height:280px}
+.season-explanation{padding:12px 28px 24px;min-height:180px}.season-explanation>span{font:11px monospace;text-transform:uppercase;letter-spacing:.04em;color:#87463d}
+.weather-rain,.weather-dust,.weather-sun{opacity:0;transition:opacity .3s}.weather-haze{transition:opacity .3s}
+[data-weather=summer] .weather-sun,[data-weather=summer] .weather-dust,[data-weather=monsoon] .weather-rain{opacity:1}
+[data-weather=summer] .weather-haze,[data-weather=monsoon] .weather-haze{opacity:0}
+@media(max-width:650px){.body-layout{grid-template-columns:1fr;gap:20px}.body-figure{max-width:270px}.body-info{min-height:190px}.reason-grid{grid-template-columns:1fr;gap:16px}.reason-grid article{display:grid;grid-template-columns:90px 1fr;gap:16px}.reason-grid p{margin-top:0}.aqi-map-viewport{height:330px}.season-choices{gap:8px}.season-choices button{min-width:0;flex:1;padding:10px;font-size:14px}.season-explanation{padding:12px 18px 20px}.season-explanation h4{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.weather-rain,.weather-dust,.weather-sun,.weather-haze{transition:none}}
+
+/* Source imagery, quiet editorial presentation. */
+.pollution-body-layout{display:grid;grid-template-columns:minmax(200px,.85fr) minmax(0,1fr);gap:64px;align-items:center;margin:32px auto;max-width:850px}
+.pollution-anatomy{display:block;width:100%;height:530px;object-fit:contain;background:none;border:0;box-shadow:none}
+.pollution-effects{margin:0}.pollution-effects>div{padding:16px 0;border-bottom:1px solid #d8d0c4}.pollution-effects>div:last-child{border:0}.pollution-effects dt{font:500 19px/1.3 Georgia,serif;color:#99483e;margin:0 0 6px}.pollution-effects dd{margin:0;font:14px/1.65 Inter,Arial,sans-serif;color:#514d44}
+.season-editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:30px}.season-editorial{min-width:0;border-top:2px solid #9e6652;padding-top:16px}.season-1{border-color:#b89048}.season-2{border-color:#66897c}
+.season-photo{aspect-ratio:430/293;background-image:url('assets/aqi-seasons-original.png');background-size:331.4% auto;background-position:3.3% 16.35%;background-repeat:no-repeat;margin-bottom:21px}.season-1 .season-photo{background-position:50% 16.35%}.season-2 .season-photo{background-position:96.8% 16.35%}
+.season-months{font:11px/1.5 Inter,Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#777064}.season-editorial h4{font:normal 28px/1.2 Georgia,serif;margin:8px 0 16px!important}.season-editorial strong{font:500 14px/1.5 Inter,Arial,sans-serif;color:#8e4e3c}.season-1 strong{color:#8a6b32}.season-2 strong{color:#426d5c}.season-editorial p{font:14px/1.75 Inter,Arial,sans-serif!important;margin-top:8px!important}
+@media(max-width:700px){.pollution-body-layout{gap:24px;grid-template-columns:1fr}.pollution-anatomy{height:390px}.pollution-effects>div{padding:12px 0}.season-editorial-grid{grid-template-columns:1fr;gap:30px}.season-photo{max-height:280px;aspect-ratio:430/293}.season-editorial h4{font-size:26px}}
+
+.anatomy-interactive{position:relative;width:100%;max-width:370px;margin:auto;aspect-ratio:1060/1484}.anatomy-interactive .pollution-anatomy{width:100%;height:100%;object-fit:fill;pointer-events:none}.anatomy-point{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:36px;height:36px;border:0;background:transparent;padding:0;cursor:pointer;z-index:2}.anatomy-point i{display:block;width:10px;height:10px;margin:auto;border-radius:50%;background:#a83e34;box-shadow:0 0 0 5px #b9483830;transition:box-shadow .2s}.anatomy-point span{position:absolute;left:29px;top:6px;background:#faf6edee;border:1px solid #d9cdc1;padding:4px 7px;font:12px/1.3 Inter,Arial,sans-serif;white-space:nowrap;color:#6b352e}.anatomy-point[data-body-part=lungs] span,.anatomy-point[data-body-part=liver] span{left:auto;right:29px}.anatomy-point[aria-pressed=true] i,.anatomy-point:hover i{box-shadow:0 0 0 8px #b9483845}.anatomy-point[aria-pressed=true] span{background:#99483e;color:white;border-color:#99483e}.anatomy-point:focus-visible{outline:2px solid #99483e;outline-offset:3px;border-radius:50%}.anatomy-detail{border-top:1px solid #cfc5b8;padding:28px 0;min-height:230px}.anatomy-detail h4{font:normal 32px/1.2 Georgia,serif!important;margin:16px 0!important;color:#99483e}.anatomy-detail>p{font:16px/1.7 Inter,Arial,sans-serif}.anatomy-detail .anatomy-hint{font-size:12px;color:#7b7368;margin-top:28px}@media(max-width:700px){.anatomy-interactive{max-width:280px}.anatomy-detail{min-height:190px;padding:22px 0}.anatomy-detail h4{font-size:28px!important}}
