@@ -1,0 +1,64 @@
+
+/* Shared layout for the two physical-computing case studies. */
+.project-introduction,.case-tldr,.project-section{width:100%;max-width:1040px;margin-inline:auto;padding-inline:40px}
+.project-introduction{margin-block:80px 56px;grid-template-columns:200px minmax(0,1fr);gap:56px}
+.case-tldr{margin-block:0 40px}
+.project-section{padding-block:48px}
+.section-heading{max-width:none;margin:0 0 24px}
+.section-heading h2{margin:0;font-size:36px;line-height:1.2}
+.section-content>p,.section-content>.cs-step,.section-content>.pcv-aud{max-width:72ch;margin-left:0!important;margin-right:0!important}
+.section-content>p:first-of-type{font:400 19px/1.65 Inter,Arial,sans-serif!important;letter-spacing:0}
+.section-content>p{font-size:16px;line-height:1.7}
+.section-content>div:not(.cs-step){margin-top:28px}
+.section-content .pcv-explore{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pcv-card-img{aspect-ratio:4/3}.pcv-card-img img{object-fit:contain}
+.pcv-card-body{padding:20px}.pcv-card-t{font-size:22px}
+.section-content .dl-form{max-width:660px;width:100%;margin:28px 0 36px;gap:16px}
+.dl-form-col img{height:auto;aspect-ratio:auto;object-fit:contain}
+.section-content .pcv-renders{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:28px}
+.pcv-render{min-width:0;margin:0!important}
+.pcv-render img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain}
+.section-content .dl-circuit{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+.dl-circuit-img{width:100%;max-width:900px;margin:0 auto;border-radius:8px}
+.dl-circuit-img>img{display:block;width:100%;height:auto}
+.dl-circuit-info{display:grid;grid-template-columns:240px minmax(0,1fr);gap:16px 32px;align-items:start;min-width:0}
+.dl-part-chips,.as-part-controls{display:flex;flex-wrap:wrap;gap:8px;margin:0;align-content:start}
+.dl-part-card{margin:0!important;min-height:150px;padding:0 0 0 24px}
+.dl-part-name,.as-real-circuit .dl-part-name{font-size:25px;margin:0 0 12px}
+.dl-part-desc,.as-real-circuit .dl-part-desc{font-size:15px;line-height:1.7;margin:0}
+.dl-part-note{grid-column:2;margin:0;font-size:12px}
+.sl-wrap{grid-template-columns:minmax(0,1.4fr) minmax(240px,1fr);gap:32px;align-items:center}
+.sl-stage{min-width:0}.sl-stage svg{display:block;width:100%;height:auto}
+.sl-side{min-width:0}
+.proxemics-panel{max-width:none;padding:28px;margin:28px 0;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+.proxemics-map svg{max-width:350px}.proxemics-copy{min-width:0}
+.glasses-grid{gap:24px;margin-block:28px}
+.glasses-grid h3{font-size:22px}.glasses-grid p{font-size:15px;line-height:1.65}
+.section-content .mannequin-display{max-width:520px;margin:48px auto 32px}
+.mannequin-display .image-trigger{display:block;width:100%}
+.mannequin-display img{width:100%;height:auto;max-height:560px;object-fit:contain}
+.section-content .glasses-photos{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:32px;align-items:start}
+.glasses-photos img{width:100%;height:280px;object-fit:contain}
+.glasses-photos figcaption,.mannequin-display figcaption{padding:12px 0;margin:0;font-size:12px;line-height:1.5}
+.glasses-flow{list-style:none;padding:0;gap:16px;margin:28px 0;counter-reset:flow}
+.glasses-flow li{border-top:1px solid #ccc6ba;padding-top:16px;font-size:14px;line-height:1.5}
+.glasses-demo{margin-top:28px;padding:24px;border-radius:8px}
+.glasses-video,.video-wrap{width:100%;margin-inline:0}
+@media(max-width:760px){
+.project-introduction,.case-tldr,.project-section{padding-inline:24px}
+.project-introduction{grid-template-columns:1fr;gap:28px;margin-block:48px}
+.project-section{padding-block:36px}.section-heading h2{font-size:30px}
+.section-content>p:first-of-type{font-size:17px!important}
+.section-content .pcv-explore{grid-template-columns:1fr}
+.section-content .pcv-renders{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.section-content .dl-form{gap:10px}
+.dl-circuit-info{grid-template-columns:1fr;gap:20px}
+.dl-part-card{min-height:0;padding-left:16px}.dl-part-note{grid-column:1}
+.sl-wrap,.proxemics-panel{grid-template-columns:1fr;gap:24px}
+.proxemics-panel{padding:20px}.proxemics-map svg{max-width:300px}
+.section-content .glasses-photos{grid-template-columns:1fr;gap:24px}
+.glasses-photos img{height:auto;max-height:360px}
+.glasses-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+.glasses-demo{padding:16px}.mannequin-display img{max-height:480px}
+}
+.dl-circuit-img{max-width:720px}.section-content .dl-circuit{margin-block:32px 48px}

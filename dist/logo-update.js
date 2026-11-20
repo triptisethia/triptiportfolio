@@ -1,0 +1,1 @@
+document.querySelector('.identity')?.addEventListener('click',function(){this.classList.remove('logo-blink');void this.offsetWidth;this.classList.add('logo-blink');setTimeout(()=>this.classList.remove('logo-blink'),1500);});
